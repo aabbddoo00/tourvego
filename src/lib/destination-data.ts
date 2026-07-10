@@ -22,10 +22,6 @@ export function getRelatedDestinations(
   return destinations.filter((destination) => destination.id !== slug).slice(0, limit)
 }
 
-export function getFeaturedExperiences(limit = 6): Experience[] {
-  return experiences.slice(0, limit)
-}
-
 export function getExperienceBySlug(slug: string): Experience | undefined {
   return experiences.find((experience) => experience.id === slug)
 }

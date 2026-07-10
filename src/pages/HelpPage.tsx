@@ -67,7 +67,7 @@ const quickLinks = [
   {
     title: 'How it works',
     description: 'Search, compare platforms, then book the best value.',
-    href: '/#how-it-works',
+    href: '/about',
     icon: Mail,
   },
 ]

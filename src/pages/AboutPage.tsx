@@ -120,7 +120,7 @@ export function AboutPage() {
                   <Link to="/destinations">Explore destinations</Link>
                 </Button>
                 <Button asChild variant="outline" className="rounded-full">
-                  <Link to="/#how-it-works">How it works</Link>
+                  <Link to="/about">How it works</Link>
                 </Button>
               </div>
             </div>

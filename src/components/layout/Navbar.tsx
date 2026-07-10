@@ -15,7 +15,7 @@ import { cn } from '@/lib/utils'
 const navLinks = [
   { label: 'Destinations', href: '/destinations' },
   { label: 'Tours & Attractions', href: '/experiences' },
-  { label: 'How It Works', href: '/#how-it-works' },
+  { label: 'How It Works', href: '/about' },
   { label: 'Blog', href: '/blog' },
   { label: 'Help', href: '/help' },
 ]

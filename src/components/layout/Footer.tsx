@@ -3,7 +3,7 @@ import { Logo } from '@/components/layout/Logo'
 const exploreLinks = [
   { label: 'Destinations', href: '/destinations' },
   { label: 'Experiences', href: '/experiences' },
-  { label: 'How It Works', href: '/#how-it-works' },
+  { label: 'How It Works', href: '/about' },
 ]
 
 const companyLinks = [
