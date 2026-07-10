@@ -1,0 +1,15 @@
+---
+description: Always commit, push, and redeploy to Vercel after code changes
+alwaysApply: true
+---
+
+# Deploy to Vercel after changes
+
+Whenever you finish implementing or fixing something in this project (unless the user says not to):
+
+1. Commit the relevant changes (ask first only if the user has not already asked to update Vercel / deploy).
+2. `git push origin main` (or the current branch).
+3. Redeploy production: `npx vercel --yes --prod`.
+4. Tell the user the live URL: https://tourvego.vercel.app
+
+Do this as part of completing the task — do not wait for a separate “deploy” request. The user expects Vercel to stay in sync with the latest work.
