@@ -1,6 +1,7 @@
 import { ComparisonCard } from '@/components/hero/ComparisonCard'
-import { ComparisonInsights } from '@/components/hero/ComparisonInsights'
 import { LiveStatsStrip } from '@/components/hero/LiveStatsStrip'
+import { SavingsCard } from '@/components/hero/SavingsCard'
+import { TrustpilotCard } from '@/components/hero/TrustpilotCard'
 
 export function TravelVisual() {
   return (
@@ -12,7 +13,11 @@ export function TravelVisual() {
 
       <LiveStatsStrip className="mb-3" />
       <ComparisonCard className="w-full" />
-      <ComparisonInsights className="mt-3" />
+
+      <div className="mt-3 grid grid-cols-2 gap-3">
+        <SavingsCard />
+        <TrustpilotCard />
+      </div>
     </div>
   )
 }
