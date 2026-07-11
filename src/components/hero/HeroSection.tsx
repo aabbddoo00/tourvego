@@ -28,7 +28,7 @@ export function HeroSection() {
             <CTAButtons />
           </div>
 
-          {/* Right column — visual collage */}
+          {/* Right column — live comparison panel */}
           <div className="relative z-10 order-2 md:order-none">
             <TravelVisual />
           </div>

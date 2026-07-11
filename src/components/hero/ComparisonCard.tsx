@@ -31,30 +31,23 @@ export function ComparisonCard({ className }: ComparisonCardProps) {
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.6, duration: 0.6, ease: 'easeOut' }}
+      transition={{ delay: 0.35, duration: 0.55, ease: 'easeOut' }}
       className={cn(
-        'rounded-3xl border border-navy-100 bg-white p-5',
+        'rounded-3xl border border-navy-100 bg-white p-5 shadow-card',
         className
       )}
     >
-      {/* Header */}
-      <div className="flex items-start gap-3">
-        <img
-          src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=160&h=160&fit=crop&q=80"
-          alt="Colosseum"
-          className="h-12 w-12 shrink-0 rounded-xl object-cover"
-          loading="lazy"
-        />
+      <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
-          <div className="flex items-start justify-between gap-2">
-            <h3 className="text-[15px] font-bold leading-tight text-navy">
+          <div className="flex flex-wrap items-center gap-2">
+            <h3 className="text-[15px] font-bold leading-tight text-navy sm:text-base">
               Colosseum Guided Tour
             </h3>
-            <span className="shrink-0 rounded-full bg-teal-50 px-2.5 py-1 text-[10px] font-semibold text-teal-700">
+            <span className="rounded-full bg-teal-50 px-2.5 py-1 text-[10px] font-semibold text-teal-700">
               Compare 6 platforms
             </span>
           </div>
-          <div className="mt-1 flex items-center gap-3 text-xs text-navy-400">
+          <div className="mt-2 flex flex-wrap items-center gap-3 text-xs text-navy-400">
             <span className="flex items-center gap-1">
               <MapPin className="h-3 w-3" />
               Rome, Italy
@@ -63,16 +56,15 @@ export function ComparisonCard({ className }: ComparisonCardProps) {
               <Clock className="h-3 w-3" />
               2.5h
             </span>
-          </div>
-          <div className="mt-1 flex items-center gap-1 text-xs">
-            <Star className="h-3.5 w-3.5 fill-accent-orange text-accent-orange" />
-            <span className="font-semibold text-navy">4.6</span>
-            <span className="text-navy-400">(1,247)</span>
+            <span className="flex items-center gap-1 text-navy">
+              <Star className="h-3.5 w-3.5 fill-accent-orange text-accent-orange" />
+              <span className="font-semibold">4.6</span>
+              <span className="text-navy-400">(1,247)</span>
+            </span>
           </div>
         </div>
       </div>
 
-      {/* Provider rows */}
       <div className="mt-4 space-y-0.5">
         {providers.map((provider) => (
           <div
@@ -118,10 +110,9 @@ export function ComparisonCard({ className }: ComparisonCardProps) {
         ))}
       </div>
 
-      {/* Footer */}
       <button
         type="button"
-        className="mt-4 flex w-full items-center justify-center gap-1 border-t border-navy-100 pt-3 text-xs font-medium text-navy-500 transition-colors hover:text-teal"
+        className="mt-5 flex w-full items-center justify-center gap-1 border-t border-navy-100 pt-3 text-xs font-medium text-navy-500 transition-colors hover:text-teal"
       >
         View all 6 platforms
         <ChevronDown className="h-3.5 w-3.5" />
