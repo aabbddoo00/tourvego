@@ -58,9 +58,8 @@ export function ExperiencePage() {
   const offers = getComparisonOffers(experience)
   const images = getGalleryImages(experience)
   const bestOffer = offers.find((o) => o.bestValue || o.bestPrice) ?? offers[0]
-  const bestProvider = bestOffer
-    ? getPlatform(bestOffer.platformId).name
-    : 'Klook'
+  const bestPlatform = bestOffer ? getPlatform(bestOffer.platformId) : null
+  const bestProvider = bestPlatform?.name ?? 'Klook'
   const description =
     experience.id === 'colosseum-guided-tour'
       ? COLOSSEUM_DESCRIPTION
@@ -116,6 +115,8 @@ export function ExperiencePage() {
             <VariationCard />
             <RecommendationCard
               providerName={bestProvider}
+              providerLogo={bestPlatform?.logo}
+              price={bestOffer?.price}
               onSeeWhy={scrollToCompare}
             />
           </div>
