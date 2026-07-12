@@ -24,7 +24,7 @@ export function RecommendationCard({
         className
       )}
     >
-      <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-teal">
+      <p className="text-base font-bold text-accent-orange sm:text-lg">
         Best Value Recommendation
       </p>
 
