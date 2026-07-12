@@ -20,7 +20,7 @@ export function RecommendationCard({
   return (
     <div
       className={cn(
-        'flex h-full flex-col rounded-2xl border border-navy-100 bg-white p-5 shadow-soft',
+        'flex h-full flex-col rounded-2xl border border-orange-200/70 bg-gradient-to-br from-orange-50 via-white to-teal-50/60 p-5 shadow-soft',
         className
       )}
     >
