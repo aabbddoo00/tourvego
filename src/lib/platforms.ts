@@ -20,6 +20,7 @@ export const platforms = {
     name: 'TripAdvisor',
     domain: 'tripadvisor.com',
   },
+  tripcom: { id: 'tripcom', name: 'Trip.com', domain: 'trip.com' },
 } as const
 
 export type PlatformId = keyof typeof platforms

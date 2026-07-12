@@ -743,19 +743,19 @@ export const experiences: Experience[] = [
     country: 'Italy',
     rating: 4.6,
     fromPrice: 43,
-    maxPrice: 75,
+    maxPrice: 55,
     platforms: 6,
     platformIds: [
+      'klook',
       'getyourguide',
       'viator',
-      'klook',
       'tiqets',
       'headout',
-      'civitatis',
+      'tripcom',
     ],
     platformPrices: [
       {
-        platformId: 'getyourguide',
+        platformId: 'klook',
         price: 43,
         features: {
           freeCancellation: true,
@@ -766,8 +766,19 @@ export const experiences: Experience[] = [
         },
       },
       {
+        platformId: 'getyourguide',
+        price: 45,
+        features: {
+          freeCancellation: true,
+          skipTheLine: true,
+          mobileTicket: true,
+          instantConfirmation: true,
+          guidedOption: true,
+        },
+      },
+      {
         platformId: 'viator',
-        price: 52,
+        price: 48,
         features: {
           freeCancellation: true,
           skipTheLine: true,
@@ -777,22 +788,11 @@ export const experiences: Experience[] = [
         },
       },
       {
-        platformId: 'klook',
-        price: 53,
-        features: {
-          freeCancellation: true,
-          skipTheLine: true,
-          mobileTicket: false,
-          instantConfirmation: true,
-          guidedOption: true,
-        },
-      },
-      {
         platformId: 'tiqets',
-        price: 65,
+        price: 49,
         features: {
-          freeCancellation: true,
-          skipTheLine: false,
+          freeCancellation: false,
+          skipTheLine: true,
           mobileTicket: true,
           instantConfirmation: true,
           guidedOption: false,
@@ -800,23 +800,23 @@ export const experiences: Experience[] = [
       },
       {
         platformId: 'headout',
-        price: 66,
+        price: 52,
         features: {
           freeCancellation: true,
           skipTheLine: true,
           mobileTicket: true,
           instantConfirmation: true,
-          guidedOption: false,
+          guidedOption: true,
         },
       },
       {
-        platformId: 'civitatis',
-        price: 75,
+        platformId: 'tripcom',
+        price: 55,
         features: {
-          freeCancellation: false,
-          skipTheLine: false,
+          freeCancellation: true,
+          skipTheLine: true,
           mobileTicket: true,
-          instantConfirmation: false,
+          instantConfirmation: true,
           guidedOption: true,
         },
       },
@@ -825,10 +825,10 @@ export const experiences: Experience[] = [
     image:
       'https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&h=520&fit=crop&q=80',
     description:
-      'Guided access to the Colosseum with options for Arena Floor and Roman Forum — compare skip-the-line packages across platforms.',
+      'Explore the iconic Colosseum with an expert guide. Learn about the history of ancient Rome and walk in the footsteps of gladiators.',
     category: 'Tour',
-    duration: '3 hours',
-    reviewCount: 27650,
+    duration: '2.5 – 3 hours',
+    reviewCount: 3245,
     freeCancellation: true,
   },
   {
